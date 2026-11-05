@@ -48,6 +48,9 @@ function animate()
 		particles[p].x += particles[p].vx;
 		particles[p].y += particles[p].vy;
 			
+		 var randomColor = Math.round(Math.random());
+            particles[p].color = colors[randomColor];
+		
 		//-------------------------------------------------INSTRUCTIONS----------------------------------------------------------
 			//If a particle moves off the bottom of the screen do the following:
 			//	1. reset it's y to the top of the screen - its height
